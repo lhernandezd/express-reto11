@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+  a(href='http://localhost:3000/logout') Log out
+  table
+    thead
+      tr
+        th Name
+        th Email
+    tbody
+      each val in users
+        tr
+          td= val.name
+          td= val.email
